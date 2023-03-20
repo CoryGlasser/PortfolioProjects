@@ -1,13 +1,17 @@
+/*
+Covid 19 Data Exploarion
+
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+
+*/
+
 Select *
 From PortfolioProject.dbo.CovidDeaths
 WHERE continent is not null
 ORDER BY 3,4
 
---Select *
---From PortfolioProject.dbo.CovidVaccinations
---ORDER BY 3,4
 
---Data selection
+-- Data selection
 Select Location, date, total_cases, new_cases, total_deaths, population
 From PortfolioProject.dbo.CovidDeaths
 ORDER BY 1,2
